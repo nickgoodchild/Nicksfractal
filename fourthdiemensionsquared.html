@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexagon Fractal</title>
+
+</head>
+<body><div style=" width= 100%; float:top; height 20px;"> <p style=" float: top; margin:6px; height: 50px; width= 100%;font-size: 300%;">
+ 4 Dimension Squared</p> <p style=" float: top; margin:6px;  width= 100%; float: left; font-size: 170%;"> Math.sqrt( 
+
+<input type="text" size="1" id="1" value="0"> 
+,
+
+
+
+<input type="text" size="1" id="2" value="0"> 
+,
+
+<input type="text" size="1" id="3" value="0"> 
+,
+
+<input type="text" size="1" id="4" value="0"> 
+) * (
+
+
+
+
+<input type="text" size="1" id="5" value="0"> 
+-
+<input type="text" size="1" id="6" value="0"> 
+) * (
+<input type="text" size="1" id="7" value="0"> 
+ - 
+
+<input type="text" size="1" id="8" value="0"> 
+) * (
+
+<input type="text" size="1" id="9" value="0"> 
+-
+
+<input type="text" size="1" id="10" value="111111"> 
+)</p>
+
+ </div><div style=" float: left;  width= 100%; float:top; "> 
+<div style="  position: absolute; left : 0px; top: 120px; "> 
+  <canvas id="fractalCanvas" width="800" height="800" style="  border:1px solid black;"></canvas> </div><div style=" position: absolute; top: 120px; left: 820px;"><p style=" font-size:300;"> Health Pain</p><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="a1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="a2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="a3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="a4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="a5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="a6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="a7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="a8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="a9" value="0"> </div>
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="aa1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aa2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aa3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aa4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aa5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aa6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aa7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aa8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="aa9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="aaa1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaa2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaa3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaa4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaa5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaa6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaa7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaa8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="aaa9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="aaaa1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="aaaa9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="aaaaa1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaa8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="aaaa9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="aaaaa1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaa8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="aaaaa9" value="0"> </div>
+
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="aaaaaa1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="aaaaaa9" value="0"> </div>
+
+
+
+
+
+
+<p style=" font-size:300;"> Health Pain</p><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="b1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="b2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="b3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="b4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="b5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="b6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="b7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="b8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="b9" value="0"> </div>
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="bb1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bb2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bb3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bb4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bb5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bb6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bb7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bb8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="bb9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="bbb1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbb2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbb3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbb4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbb5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbb6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbb7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbb8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="bbb9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="bbbb1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbb2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbb3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbb4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbb5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbb6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbb7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbb8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="bbbb9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="bbbbb1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbb2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbb3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbb4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbb5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbb6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbb7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbb8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="bbbbb9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="bbbbb1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbbb2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbbb3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbbb4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbbb5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbbb6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbbb7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="bbbbbbb8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="bbbbbb9" value="0"> </div><p style=" font-size:300;"> Health Pain</p><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="c1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="c2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="c3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="c4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="c5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="c6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="c7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="c8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="c9" value="0"> </div>
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="cc1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cc2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cc3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cc4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cc5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cc6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cc7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cc8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="cc9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="ccc1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccc2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccc3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccc4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccc5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccc6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccc7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccc8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="ccc9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="cccc1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccc2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccc3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccc4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccc5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccc6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccc7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccc8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="cccc9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="ccccc1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccccc2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccccc3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccccc4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccccc5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccccc6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccccc7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="ccccc8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="ccccc9" value="0"> </div>
+
+<div style=" float: left; "><div style=" float: top; "><input type="text" style="margin:6px; width:15px;" id="cccccc1" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccccc2" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccccc3" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccccc4" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccccc5" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccccc6" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccccc7" value="0"> 
+
+<input type="text" style="margin:6px; width:15px;" id="cccccc8" value="0"> 
+<input type="text" style="margin:6px; width:15px;" id="cccccc9" value="0"> </div>
+</div>
+
+ </div> <div style=" position: absolute; left: 350px; top:15%;"> 
+ <canvas id="userspinner" width="400" height="400" style="border:1px solid black;"></canvas>
+</div>
+</body><script>
+const dave = [];
+dave[0] = 0;
+const daveb = [];
+daveb[0] = 0;
+setInterval(function () {
+for( var fuzz = 1; fuzz < 9; fuzz++){
+
+var ab = Math.floor((Math.random() *  2));
+var save = "a" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "aa" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "aaa" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "aaaa" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "aaaaa" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "aaaaaa" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "b" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "bb" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "bbb" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "bbbb" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "bbbbb" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+
+
+var ab = Math.floor((Math.random() *  2));
+var save = "bbbbb" + fuzz;
+ window.document.getElementById(save).value = ab;
+var ab = Math.floor((Math.random() *  2));
+var save = "c" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "cc" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "ccc" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "cccc" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "ccccc" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+var ab = Math.floor((Math.random() *  2));
+var save = "cccccc" + fuzz;
+ window.document.getElementById(save).value = ab;
+
+}
+dave[0] = dave[0] + 1;
+daveb[0] = daveb[0] + 1;
+if( 0 == 0 ){
+var ab = Math.floor((Math.random() *  9));
+
+
+ window.document.getElementById("1").value = ab;
+
+var  abc = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("2").value = abc;
+
+
+var  abd = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("3").value = abd;
+
+
+var  abe = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("4").value = abe;
+
+
+var  abf = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("5").value = abf;
+
+
+var  abg = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("6").value = abg;
+
+
+var  abh = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("7").value = abh;
+
+
+var  abi = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("8").value = abi;
+
+
+var  abj = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("9").value = abj;
+
+
+var  abk = Math.floor((Math.random() *  9));
+ 
+ window.document.getElementById("10").value = abk;
+   var canvas = document.getElementById('fractalCanvas');
+    var ctx = canvas.getContext('2d');
+if( dave[0] > 0 ){
+ctx.clearRect( 0, 0 , 800 , 800 );
+dave[0] = 0;
+
+} 
+    function drawHexagon(x, y, size) {
+	
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+       
+var guy = (( abf - abg) * ( abh - abi ) * ( abj - abk));
+
+var guya = ab / Math.cos(guy);
+
+
+var guyb = abc * Math.cos(guy);
+
+var guyc = abd / Math.cos(guy) ;
+
+
+var guyd = abe * Math.cos(guy) ;
+
+var guye = guya / guyc;
+var guyf = guyb / guyd;
+
+var guyg = (ab , abc, abd, abe) * (( abf - abg) * ( abh - abi ) * ( abj - abk));
+       var angle = guyg * i;
+        var xOffset = x + guyb * Math.cos(angle) * 30;
+        var yOffset = y + guyd * Math.sin(angle) * 30;
+        ctx.lineTo(xOffset, yOffset);
+      }
+      ctx.closePath();
+      ctx.stroke();
+    }
+
+    function drawFractal(x, y, size, depth) {
+      if (depth === 0) return;
+
+      drawHexagon(x, y, size);
+
+      const newSize = size / 2;
+      for (let i = 0; i < 6; i++) {
+
+var guy = (( abf - abg) * ( abh - abi ) * ( abj - abk));
+
+var guya = ab / Math.cos(guy);
+
+
+var guyb = abc * Math.cos(guy);
+
+var guyc = abd / Math.cos(guy) ;
+
+
+var guyd = abe * Math.cos(guy) ;
+var guye = guya / guyc;
+var guyf = guyb / guyd;
+var guyg = (ab , abc, abd, abe) * (( abf - abg) * ( abh - abi ) * ( abj - abk));
+       var angle = guyg * i;
+       var xOffset = x + guyb * Math.cos(angle) * 30;
+        var yOffset = y + guyd * Math.sin(angle) * 30;
+
+        drawFractal(xOffset, yOffset, newSize, depth - 1);
+      }
+    }
+
+    // Initial call to draw the fractal
+    ctx.strokeStyle = 'blue';
+
+    drawFractal(400, 400, 200,4); // Center (400, 400), size 200, depth 4
+
+}
+if( 0 == 0 ){
+var ab = Math.floor((Math.random() *  9));
+
+
+ window.document.getElementById("1").value = ab;
+
+var  abc = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("2").value = abc;
+
+
+var  abd = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("3").value = abd;
+
+
+var  abe = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("4").value = abe;
+
+
+var  abf = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("5").value = abf;
+
+
+var  abg = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("6").value = abg;
+
+
+var  abh = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("7").value = abh;
+
+
+var  abi = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("8").value = abi;
+
+
+var  abj = Math.floor((Math.random() *  9));
+
+ window.document.getElementById("9").value = abj;
+
+
+var  abk = Math.floor((Math.random() *  9));
+ 
+ window.document.getElementById("10").value = abk;
+   var canvas = document.getElementById("userspinner");
+    var ctx = canvas.getContext('2d');
+if( daveb[0] > 0 ){
+ctx.clearRect( 0, 0 , 800 , 800 );
+daveb[0] = 0;
+
+} 
+    function drawHexagon(x, y, size) {
+	
+      ctx.beginPath();
+      for (let i = 0; i < 6; i++) {
+       
+var guy = (( abf - abg) * ( abh - abi ) * ( abj - abk));
+
+var guya = ab / Math.cos(guy);
+
+
+var guyb = abc * Math.cos(guy);
+
+var guyc = abd / Math.cos(guy) ;
+
+
+var guyd = abe * Math.cos(guy) ;
+
+var guye = guya / guyc;
+var guyf = guyb / guyd;
+
+var guyg = (ab , abc, abd, abe) * (( abf - abg) * ( abh - abi ) * ( abj - abk));
+       var angle = guyg * i;
+        var xOffset = x + guyb * Math.cos(angle) * 30;
+        var yOffset = y + guyd * Math.sin(angle) * 30;
+        ctx.lineTo(xOffset, yOffset);
+      }
+      ctx.closePath();
+      ctx.stroke();
+    }
+
+    function drawFractal(x, y, size, depth) {
+      if (depth === 0) return;
+
+      drawHexagon(x, y, size);
+
+      const newSize = size / 2;
+      for (let i = 0; i < 6; i++) {
+
+var guy = (( abf - abg) * ( abh - abi ) * ( abj - abk));
+
+var guya = ab / Math.cos(guy);
+
+
+var guyb = abc * Math.cos(guy);
+
+var guyc = abd / Math.cos(guy) ;
+
+
+var guyd = abe * Math.cos(guy) ;
+
+var guye = guya / guyc;
+var guyf = guyb / guyd;
+var guyg = (ab , abc, abd, abe) * (( abf - abg) * ( abh - abi ) * ( abj - abk));
+       var angle = guyg * i;
+       var xOffset = x + guyb * Math.cos(angle) * 30;
+        var yOffset = y + guyd * Math.sin(angle) * 30;
+
+        drawFractal(xOffset, yOffset, newSize, depth - 1);
+      }
+    }
+
+    // Initial call to draw the fractal
+    ctx.strokeStyle = 'blue';
+
+    drawFractal(200, 200, 200,4); // Center (400, 400), size 200, depth 4
+
+}
+}, 5000);
+</script>
+</html>
